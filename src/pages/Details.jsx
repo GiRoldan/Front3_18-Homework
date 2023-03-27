@@ -1,5 +1,5 @@
 import React from 'react'
-import { useParams } from 'react-router-dom';
+import { Outlet, useParams } from 'react-router-dom';
 import hoteles from '../hoteles.json'
 
 const Details = () => {
@@ -19,7 +19,8 @@ const Details = () => {
       <p>Contáctanos:</p>
       <h3>{hotel.phone}</h3>
       <h3>{hotel.email}</h3>
-    </div>
+      <Outlet/>
+    </div>   
   );
 }
 
